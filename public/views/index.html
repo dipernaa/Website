@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Anthony DiPerna</title>
+    <link rel="stylesheet" href="../styles/libs/bootstrap.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/resume.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">Anthony DiPerna</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/resume">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div ng-view></div>
+
+    <script type="text/javascript" src="../scripts/libs/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../scripts/libs/bootstrap.js"></script>
+    <script type="text/javascript" src="../scripts/libs/angular.js"></script>
+    <script type="text/javascript" src="../scripts/libs/angular-route.js"></script>
+    <script type="text/javascript" src="../scripts/app.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/MainCtrl.js"></script>
+    <script type="text/javascript" src="../scripts/controllers/ResumeCtrl.js"></script>
+</body>
+</html>
