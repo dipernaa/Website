@@ -1,4 +1,5 @@
 var bodyParser = require('body-parser');
+var favicon = require('serve-favicon');
 var express = require('express');
 //var request = require('request'); //Used for external http requests
 //var mysql = require('mysql');
@@ -10,6 +11,8 @@ var app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
+
 
 app.set('views', __dirname + '/public/views');
 app.engine('html', require('ejs').renderFile);
