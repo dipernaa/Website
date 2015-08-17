@@ -2,11 +2,9 @@ var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
 var express = require('express');
 var path = require('path');
-var cors = require('cors');
 var app = express();
 
 app.use(bodyParser.json());
-app.use(cors());
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 
