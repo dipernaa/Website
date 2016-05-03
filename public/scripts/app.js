@@ -10,6 +10,10 @@ myApp.config(function($routeProvider) {
             templateUrl: '../views/recipes.html',
             controller: 'RecipeCtrl'
         }).
+        when('/workouts', {
+            templateUrl: '../views/workouts.html',
+            controller: 'WorkoutCtrl'
+        }).
         when('/resume', {
             templateUrl: '../views/resume.html',
             controller: 'ResumeCtrl'
@@ -17,4 +21,4 @@ myApp.config(function($routeProvider) {
         otherwise({
             redirectTo: '/'
         });
-})
+});
